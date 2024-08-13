@@ -1,0 +1,67 @@
+const person = {
+  name: "Neeraj",
+  age: 27,
+  city: "Mathura",
+  "Mobile No": 123456789,
+  0: "Hello",
+  // Functions inside object are called Methods
+  greet: function () {
+    console.log("Hi, World");
+  },
+};
+
+console.log(person);
+
+// How to access
+// 1. Dot(.) notation -> It requires the key to be a valid identifier
+// 1.1 Contains no spaces
+// 1.2 Doesn't start with digit
+// 1.3 Doesn't include special characters($, &, _ are allowed)
+
+console.log(person.name);
+console.log(person.city);
+// console.log(person."Mobile No"); // invalid identifier
+
+// 2. Bracket Notation [] -> works with any string
+
+console.log(person["Mobile No"]);
+console.log(person[0]);
+console.log(person["0"]);
+console.log(person.greet());
+
+// Property/Key names limitation
+
+let obj = {
+  for: 1,
+  let: 2,
+  return: 3,
+};
+
+console.log(obj.let);
+
+// How to delete keys
+
+delete obj.let;
+
+console.log(obj);
+console.log(obj.abc); // undefined
+
+// Checking if a property exists:
+// in operator
+
+console.log(obj.abc === undefined); // true means no such property ie abc exist
+
+// Syntax
+// "key" in object
+
+let user = {
+  name: "Neeraj",
+  age: 26,
+  test: undefined,
+};
+
+console.log("age" in user); // true
+console.log("blah" in user); // false
+// console.log(age in user); // throw an error
+console.log(obj.test); // undefined
+console.log("test" in user); // true
