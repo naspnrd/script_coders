@@ -1,0 +1,18 @@
+<!-- XML(Extensible Markup Language) -> more similar to HTML tags -->
+
+<root>
+    <name>Neeraj</name>
+    <age>22</age>
+    <isStudent>false</isStudent>
+    <address>
+        <street>Mathura</street>
+        <city>Mathura</city>
+        <pincode>123456</pincode>
+    </address>
+    <hobbies>
+        <hobby>Teaching</hobby>
+        <hobby>Travelling</hobby>
+        <hobby>Bike Rides</hobby>
+    </hobbies>
+    <hasPets>null</hasPets>
+</root>

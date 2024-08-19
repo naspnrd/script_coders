@@ -1,0 +1,12 @@
+{
+  "name": "Neeraj",
+  "age": 22,
+  "isStudent": false,
+  "address": {
+    "street": "Mathura",
+    "city": "Mathura",
+    "pincode": 123456
+  },
+  "hobbies": ["Teaching", "Travelling", "Bike Rides"],
+  "hasPets": null
+}
