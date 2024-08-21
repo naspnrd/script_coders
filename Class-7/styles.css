@@ -1,0 +1,71 @@
+/* h1 {
+    font-size: 50px
+}
+
+.title {
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+#heading {
+    background-color: green;
+}
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 50px;
+}
+ */
+
+/* #container .content {
+    color: red;
+} */
+
+/* #container > .content {
+    color: red;
+} */
+
+
+/* .title + .content {
+    font-weight: bold;
+} */
+/* 
+.title ~ .content {
+    font-weight: bold;
+} */
+
+/* .active-btn {
+    background-color: blue;
+}
+
+.blue-btn {
+    font-size: 24px;
+} */
+
+.primary {
+    background-color: blue;
+    color: white;
+    font-size: 24px;
+}
+
+.secondary {
+    background-color: white;
+    color: black;
+ 
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
