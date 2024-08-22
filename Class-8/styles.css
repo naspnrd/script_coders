@@ -1,0 +1,13 @@
+span {
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+
+
+div {
+    min-width: 100px;
+    min-height: 100px;
+    padding: 30px;
+    border: 1px solid black;
+}
