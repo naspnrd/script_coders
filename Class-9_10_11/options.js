@@ -1,6 +1,7 @@
 let selectedCell = "";
 const activeCellElement = document.querySelector(".selected-cell");
 const form = document.querySelector("#options-form");
+const expressionInput = document.querySelector("#expression");
 
 body.addEventListener("click", (event) => {
   if (selectedCell) {
@@ -46,3 +47,12 @@ function applyStylesToSelectedCell(styles) {
   selectedCell.style.color = styles.textColor;
   selectedCell.style.backgroundColor = styles.backgroundColor;
 }
+
+expressionInput.addEventListener("keyup", (event) => {
+  if (event.key === "Enter") {
+    const expressionResult = eval(event.target.value);
+    console.log(expressionResult);
+    selectedCell.innerText = expressionResult;
+    expressionInput.value = "";
+  }
+});
