@@ -11,7 +11,7 @@ body {
     grid-template-columns: 40px auto;
     grid-template-rows: 30px auto;
     height: 80vh;
-    width: 50vw;
+    width: 100%;
     margin: 50px 0;
     border: 1px solid #c0c0c0;
     overflow-x: scroll;
@@ -80,4 +80,73 @@ body {
     font-family: normal;
     font-style: normal;
     overflow-y: scroll;
+}
+
+.form-container {
+    padding: 10px;
+    margin: 0 30px;
+    background-color: #edf2fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 50px;
+}
+
+.fr-aic {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    display: none;
+}
+
+input[type="color"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
+    background-color: #d3e2fd;
+}
+
+label {
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.options {
+    background-color: #f8fbfd;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box {
+    width: 80vw;
+    margin: auto;
+}
+
+.box input {
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 50px;
+    border-width: 1px;
+}
+
+.box .selected-cell {
+    background-color: #d3e2fd;
+    padding: 5px;
+    border-radius: 5px;
+    width: 40px;
+    text-align: center;
+}
+
+.active-cell {
+    border: 1px solid #0957d0;
 }

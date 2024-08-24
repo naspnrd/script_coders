@@ -37,6 +37,7 @@ for (let row = 1; row <= rows; row++) {
     const colCell = document.createElement("cite");
     colCell.classList.add("cell");
     colCell.contentEditable = true;
+    colCell.id = `${String.fromCharCode(64 + col)}${row}`;
     rowCells.appendChild(colCell);
   }
   body.appendChild(rowCells);
