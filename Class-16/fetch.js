@@ -90,14 +90,51 @@
 //   .then((result) => console.log(result))
 //   .catch((error) => console.log(error));
 
-const controller = new AbortController();
+// const controller = new AbortController();
 
-const timeout = setTimeout(() => controller.abort(), 0);
+// const timeout = setTimeout(() => controller.abort(), 0);
 
-fetch("https://jsonplaceholder.typicode.com/posts", {
-  signal: controller.signal,
-})
-  .then((response) => response.json())
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error))
-  .finally(() => clearTimeout(timeout));
+// fetch("https://jsonplaceholder.typicode.com/posts", {
+//   signal: controller.signal,
+// })
+//   .then((response) => response.json())
+//   .then((result) => console.log(result))
+//   .catch((error) => console.log(error))
+//   .finally(() => clearTimeout(timeout));
+
+// fetch("https://jsonplaceholder.typicode.com/posts", {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+//   body: JSON.stringify({
+//     title: "foo",
+//     body: "bar",
+//     userId: 1,
+//   }),
+// })
+//   .then((response) => response.json())
+//   .then((result) => console.log(result))
+//   .catch((error) => console.log(error));
+
+async function apiCall() {
+  try {
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        title: "foo",
+        body: "bar",
+        userId: 1,
+      }),
+    });
+    const response = await res.json();
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+apiCall();
