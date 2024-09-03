@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="video.js" type="module"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="toggle-btn">
+        <!-- Button for toggling sidebar-->
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <a href="/Youtube-clone/main.html">
+        <img src="img/logo.PNG" alt="youtube logo" class="logo" />
+      </a>
+      <div class="search-box">
+        <input type="text" class="search-bar" placeholder="Search" />
+        <button class="search-btn">
+          <img src="img/search.PNG" alt="search icon" />
+        </button>
+      </div>
+      <div class="user-options">
+        <img src="img/video.PNG" class="icon" alt="video icon" />
+        <img src="img/grid.PNG" class="icon" alt="grid icon" />
+        <img src="img/bell.PNG" class="icon" alt="notification icon" />
+        <div class="user-dp">
+          <img src="img/profile-pic.png" alt="profile picture" />
+        </div>
+      </div>
+    </nav>
+    <div class="video-player-container">
+      <div id="video-player"></div>
+    </div>
+    <div class="video-comments-container">
+      <h2>Comments</h2>
+      <ul id="video-comments-list" class="comment-list">
+        <!-- <li class="comment-item">
+          <div class="comment-author">
+            <img
+              src="https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=1024x1024&w=is&k=20&c=er-yFBCv5wYO_curZ-MILgW0ECSjt0DDg5OlwpsAgZM="
+              alt="Profile Img"
+            />
+            Sample User
+          </div>
+          <div class="comment-body">
+            <div class="comment-text">This is a sample comment.</div>
+            <div class="comment-actions">
+              <img src="img/like.png" alt="like icon" />
+              <span class="action-count">10</span>
+              <img src="img/dislike.png" alt="dislike idon" />
+              <span class="action-count">Reply</span>
+            </div>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+  </body>
+</html>

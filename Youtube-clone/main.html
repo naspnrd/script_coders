@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube Clone</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -15,7 +15,9 @@
         <span></span>
         <span></span>
       </div>
-      <img src="img/logo.PNG" alt="youtube logo" class="logo" />
+      <a href="/Youtube-clone/main.html">
+        <img src="img/logo.PNG" alt="youtube logo" class="logo" />
+      </a>
       <div class="search-box">
         <input type="text" class="search-bar" placeholder="Search" />
         <button class="search-btn">
@@ -68,5 +70,8 @@
       <button class="filter-options">Music</button>
       <button class="filter-options">Movies</button>
     </div>
+    <div class="video-container"></div>
+
+    <!-- <script src="https://api.google.com/js/api.js"></script> -->
   </body>
 </html>

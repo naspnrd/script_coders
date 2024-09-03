@@ -1,8 +1,9 @@
 // 1st step open this link https://console.cloud.google.com/
 
-// 2nd step is click on 'select a project' dropdown
+// 2nd step is click on 'select a project' dropdown 
 //          if you are already having a project
 //          it wil show up there
+or Click on Apis and Services 
 
 // 3rd step is click on new project
 
